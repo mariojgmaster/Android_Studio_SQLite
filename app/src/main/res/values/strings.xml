@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">Products</string>
-    <string name="list_products_screen_title">Produtos</string>
-    <string name="edit_products_screen_title">Editar Produto</string>
-    <string name="add_products_screen_name_hint">Nome do Produto</string>
-    <string name="add_products_screen_desc_hint">Descrição do Produto</string>
-    <string name="add_products_screen_price_hint">99.99</string>
-</resources>
