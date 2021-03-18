@@ -1,6 +1,6 @@
 /*
  * Class: Connection
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Mário Oliveira
  */
 

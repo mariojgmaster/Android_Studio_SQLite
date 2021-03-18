@@ -15,6 +15,7 @@
     <color name="product_item_btn_edit">#247BA0</color>
     <color name="list_products_screen_bg">#AAEEEEEE</color>
     <color name="add_product_screen_bg">#AAEEEEEE</color>
+    <color name="add_product_btn">#054F77</color>
     <color name="screen_titles">#2B2B2B</color>
     <color name="add_product_edit_text">#054F77</color>
     <color name="add_product_edit_text_hint">#55054F77</color>

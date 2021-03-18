@@ -1,9 +1,7 @@
 /*
- * Class: Utils
- * Version: 1.0.0
+ * Class: Connection
+ * Version: 1.1.1
  * Author: Mário Oliveira
- * Created: 13/03/2021 - 16:02
- * Last Modified: -
  */
 
 package com.exemple.products;

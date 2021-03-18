@@ -1,6 +1,6 @@
 /*
  * Class: ProductDAO
- * Version: 1.0.0
+ * Version: 1.2.1
  * Author: Mário Oliveira
  */
 
@@ -12,12 +12,11 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class ProductDAO {
 
-    Connection connection;
-    SQLiteDatabase banco;
+    private Connection connection;
+    private SQLiteDatabase banco;
 
     public ProductDAO(Context context) {
         connection = new Connection(context);
@@ -27,8 +26,8 @@ public class ProductDAO {
     public long insertProduct(Product product) {
         ContentValues values = new ContentValues();
         values.put("name", product.getName());
-        values.put("description", product.getDescription());
         values.put("active", product.getActive());
+        values.put("description", product.getDescription());
         values.put("price", product.getPrice());
         return banco.insert("product", null, values);
     }
@@ -48,6 +47,19 @@ public class ProductDAO {
             products.add(product);
         }
         return products;
+    }
+
+    public void deleteProduct(Product prod) {
+        banco.delete("product", "id = ?", new String[]{prod.getId().toString()});
+    }
+
+    public void updateProduct(Product product) {
+        ContentValues values = new ContentValues();
+        values.put("name", product.getName());
+        values.put("active", product.getActive());
+        values.put("description", product.getDescription());
+        values.put("price", product.getPrice());
+        banco.update("product", values, "id = ?", new String[]{product.getId().toString()});
     }
 
 }
